@@ -27,7 +27,12 @@ dependencies:
     version: '>=5.0'
   espp/base_component: '>=1.0'
   espp/canopen: '>=1.0'
-  espp/motor_controller: '>=1.0'
+  # Integration branch only: the command table this component needs is on the same
+  # branch, so take motor_controller from there rather than the registry.
+  espp/motor_controller:
+    git: https://github.com/ewang360/espp.git
+    path: components/motor_controller
+    version: rammp/mcp266-defaults
   espp/dispatcher: '>=1.0'
   espp/stream_frame: '>=1.0'
   espp/task: '>=1.0'
