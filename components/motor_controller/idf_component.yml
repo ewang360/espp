@@ -1,4 +1,7 @@
 ## IDF Component Manager Manifest File
+# Integration branch only: a git checkout has no version, so one is set here so that the
+# checkout satisfies other components' ">=1.x" constraints on this component.
+version: "1.4.3"
 license: "MIT"
 description: "Shared motor-controller interface for espp: the MotorAxis channel selector and the MotorController concept satisfied by the Basicmicro (serial) and Mcp266 (CANopen) drivers"
 url: "https://github.com/esp-cpp/espp/tree/main/components/motor_controller"

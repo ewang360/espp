@@ -1,4 +1,7 @@
 ## IDF Component Manager Manifest File
+# Integration branch only: a git checkout has no version, so one is set here so that the
+# checkout satisfies other components' ">=1.x" constraints on this component.
+version: "1.4.3"
 license: "MIT"
 description: "Dual-channel Basicmicro MCP266 (RoboClaw family) motor controller over CANopen (CiA 402 profile position)"
 url: "https://github.com/esp-cpp/espp/tree/main/components/mcp266"
